@@ -80,6 +80,8 @@ a {
   justify-content: center;
   gap: 24px;
 
+  animation: fade-in, slide-up;
+
   box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
   border-radius: 16px;
   width: 320px;
@@ -118,4 +120,28 @@ a {
   line-height: 1.2;
   font-weight: 400;
   text-align: center;
+}
+
+/* animations */
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slide-up {
+  from {
+    transform: translateY(200px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.animate.animate--2s {
+  animation-duration: 2s;
 }
