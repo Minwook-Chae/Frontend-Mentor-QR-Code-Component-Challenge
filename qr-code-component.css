@@ -141,6 +141,11 @@ a {
   }
 }
 
+.animate {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
 .animate.animate--2s {
   animation-duration: 2s;
 }
