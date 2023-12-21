@@ -1,0 +1,121 @@
+:root {
+  font-size: 62.5%; /* 1rem = 10px */
+  --color-blue: #2c7dfa;
+  --color-blue-shade: #3685ff;
+  --color-dark-navey: #1f314f;
+  --color-grey: #7d889e;
+  --color-light-grey: #d5e1ef;
+  --color-white: #ffffff;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+
+  /* removes default styling from certain elements like button and label */
+  font: inherit;
+
+  font-family: "Outfit", sans-serif;
+  line-height: 1.5;
+  word-break: break-word;
+}
+
+html {
+  scroll-behavior: smooth;
+  /* color-scheme: dark light;  */
+}
+
+body {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+
+  min-height: 100vh;
+
+  background-color: var(--color-light-grey);
+
+  font-size: 1.6rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  font-style: italic;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-image: url(low-res-version-of-img.jpg); */
+  shape-margin: 1rem;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  /* display: block;
+    max-width: 100%; */
+  display: block;
+  block-size: auto;
+  max-inline-size: 100%;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* end of reset.css */
+.card {
+  display: grid;
+  grid-template-rows: 288px auto;
+  justify-content: center;
+  gap: 24px;
+
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  width: 320px;
+  min-height: 497px;
+  padding: 16px;
+
+  background-color: var(--color-white);
+}
+
+.card__img {
+  border-radius: 16px;
+}
+
+.card__text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.card__text > h1 {
+  color: var(--color-dark-navey);
+
+  font-size: 2.2rem;
+  line-height: 1.2;
+  font-weight: 700;
+  text-align: center;
+}
+
+.card__text > p {
+  margin: 0 16px 0;
+
+  color: var(--color-grey);
+
+  font-size: 1.5rem;
+  line-height: 1.2;
+  font-weight: 400;
+  text-align: center;
+}
